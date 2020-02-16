@@ -1,4 +1,14 @@
-// from data.js
-var tableData = data;
+//Create function to append table
+function tableData(aliens){
+    d3.select("tbody").html("");
+    aliens.forEach(alienRow => {
+    var tableRow = d3.select("tbody")
+    .append("tr");
+    Object.values(alienRow).forEach(value => {
+    var cell = alienRow.append("td")
+    })
+    })
+} 
 
-// YOUR CODE HERE!
+// create table
+tableData.append()
